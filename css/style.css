@@ -1,11 +1,11 @@
 body {
-  padding: 30px;
+  padding: 5px 30px;
 }
 
 .slidercontainer {
   float: left;
   display: inline-block;
-  width: 60px;
+  width: 100px;
   height: 300px;
   margin-bottom:100px;
 }
@@ -36,5 +36,4 @@ body {
 
 #info{
   clear:left;
-  margin-top: 10px;
 }

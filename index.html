@@ -15,7 +15,28 @@
 
 <body>
 
+<div id="info">
 
+<h4> Fleshlight Launch Experimental Controller v0.1<br /><br />
+Needs Chrome 56+ on Mac/ChromeOS/Android M (6.0+)/Linux (If on linux, turn on Experimental Web Extensions)<br /><br />
+
+S = Speed of stroke<br />
+D = Distance of stroke<br />
+O = Offset (position to start from, the down stroke moves to this)<br />
+i = interval (time between strokes)
+
+<br /><br />Use at your own risk, this is unsupported and experimetal, you could hurt yourself if not careful.</h4>
+
+I hacked this abomination together from raunch-js, because the buttons on the Launch are retarded.<br />
+It turns out that having more control is awesome.<br />
+<br />
+What does this do exactly?:<br />
+Every interval (i, seconds), sends an up stroke of distance (d, %) at speed (s, %) to the launch, and after interval (i) returns to offest (o) at speed (s).
+<br /><br />
+
+I limited the interval to 150ms because the Launch crashes with lower than that.
+
+</div>
 
 <button style="display:inline-block;margin-bottom:10px;padding:5px 20px" type="button" id="connect" onclick="connect()">Connect</button>
 
@@ -50,17 +71,6 @@
  </div>
 
 <div id="console">console & error output:</div>
-<div id="info">
-<h2>
-S = speed<br />
-D = distance<br />
-O = offset<br />
-i = Interval</h2>
-
-Fleshlight Launch Controller v0.1:<br />
-
-
-</div>
 
 
 <script src='js/jquery.min.js'></script>
