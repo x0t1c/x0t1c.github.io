@@ -79,14 +79,14 @@ function down(){
 
 con = document.getElementById('console');
 
-console.olog = console.log;
+//console.olog = console.log;
 
-console.log = function(message) {
-    console.olog(message);
-    $('#console').append('<p>' + message + '</p>');
-    setTimeout(function(){ con.scrollTop =  con.scrollHeight;},100);
-};
+//console.log = function(message) {
+    // console.olog(message);
+    //$('#console').append('<p>' + message + '</p>');
+    //setTimeout(function(){ con.scrollTop =  con.scrollHeight;},100);
+//};
 
-window.onerror = function(message, url, linenumber) {
-    console.log(message);
-}
+//window.onerror = function(message, url, linenumber) {
+//    console.log(message);
+//}
