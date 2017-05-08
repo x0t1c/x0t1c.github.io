@@ -66,7 +66,7 @@ function m(p,s){
     
     console.log('^ '+pos);
     m(pos,speed);
-    t = setTimeout(function() { down(); }, interval*1000);
+    t = setTimeout(function() { down(); }, interval);
   }
 
 
@@ -74,7 +74,7 @@ function down(){
   pos = offset;
   console.log('v '+pos);
   m(pos,speed);
-  t = setTimeout(function() { up(); }, interval*1000);
+  t = setTimeout(function() { up(); }, interval);
 }
 
 con = document.getElementById('console');
